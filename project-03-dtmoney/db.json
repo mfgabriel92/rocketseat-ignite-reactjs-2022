@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "type": "income",
+      "description": "Salary",
+      "amount": 1500,
+      "category": "Salary",
+      "createdAt": "2022-08-20T08:39:44.200Z",
+      "id": 1
+    },
+    {
+      "type": "outcome",
+      "description": "Groceries",
+      "amount": 475,
+      "category": "Food & Drink",
+      "createdAt": "2022-08-20T08:40:33.811Z",
+      "id": 2
+    },
+    {
+      "type": "income",
+      "description": "Found on the floor",
+      "amount": 50,
+      "category": "Luck",
+      "createdAt": "2022-08-20T08:49:47.406Z",
+      "id": 3
+    }
+  ]
+}
