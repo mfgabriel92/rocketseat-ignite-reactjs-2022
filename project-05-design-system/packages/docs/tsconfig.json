@@ -1,0 +1,6 @@
+{
+  "extends": "@mfgabriel92-rocketseat-reactjs-2022-design-system/ts-config/react.json",
+  "include": [
+    "src"
+  ],
+}

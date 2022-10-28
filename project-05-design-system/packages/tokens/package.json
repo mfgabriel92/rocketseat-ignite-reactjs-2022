@@ -1,0 +1,22 @@
+{
+  "name": "@mfgabriel92-rocketseat-reactjs-2022-design-system/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@mfgabriel92-rocketseat-reactjs-2022-design-system/eslint-config": "*",
+    "@mfgabriel92-rocketseat-reactjs-2022-design-system/ts-config": "*",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4"
+  }
+}
