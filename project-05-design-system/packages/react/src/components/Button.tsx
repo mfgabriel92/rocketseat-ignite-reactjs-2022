@@ -88,3 +88,5 @@ export const Button = stitches.styled("button", {
 });
 
 export interface ButtonProps extends ComponentProps<typeof Button> {}
+
+Button.displayName = "Button";
