@@ -1,4 +1,4 @@
-name: Deploy Docs
+name: Deploy docs
 
 on:
   push:
@@ -11,14 +11,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Step-up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm ci
       - run: npm run build
-      - name: Deploy Storybook
+      - name: Deploy storybook
         working-directory: ./packages/docs
-        run: npm run deploy -- --ci --existing-output-dir=storybook-static
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
